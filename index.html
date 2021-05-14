@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
@@ -13,153 +14,271 @@
 </head>
 
 <body>
-    <!-- ---------------------nav-bar------------------------ -->
-    <header>
-        <div class="row">
-            <nav class="navbar navbar">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#"></a>
-                    </div>
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <img src="./images/tarvcel buddies1.png" alt="logo" id="logo">
+    <div class="conatianer-fluid">
+        <!-- ---------------------nav-bar-section------------------------ -->
+        <section id="navbar_section">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <img src="./images/tarvcel buddies1.png" alt="site-logo" id="logo">
+                        <div id="navbar_menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ABOUTUS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SERVICES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">TOUR</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">PACKAGES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">BLOG</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">CONTACT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn navbar-btn" id="navbar_button">GET INQUIRY</button>
+                                </li>
+                        </div>
                         </li>
-                        <li>
-                            <a href="#">HOME</a></li>
-                        <li>
-                            <a href="#">ABOUT US</a>
-                        </li>
-                        <li>
-                            <a href="#">SERVICES</a>
-                        </li>
-                        <li>
-                            <a href="#">TOUR</a>
-                        </li>
-                        <li>
-                            <a href="#">PACKAGES</a>
-                        </li>
-                        <li>
-                            <a href="#">BLOG</a>
-                        </li>
-                        <li>
-                            <a href="#">CONTACT</a>
-                    </ul>
+                        <div class="dropdown-menu-hidden">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
 
-                    <button class="btn navbar-btn" id="navbutton">GET
-                        INQUIRY</button>
-                </div>
-            </nav><br>
-    </header>
-    </div>
-    <!-- ------------------------------------------------ -->
-    <div class="row ">
-        <div class="col-lg-12 col-md-12 mb-4 mb-md-0 ">
-            <img class="backgroundimg" src="./images/1151032.jpg" alt="place">
-            <div class="container ">
-
-                <div class="textonbg">
-                    <h1 id="para1">Best Journey To Travel
-                    </h1>
-                    <h1 id="para2">
-                        WORLDWIDE SINCE 1993</h1>
-                </div>
-
-                <div class="textonbg "></div>
-
-                <button class="btn1 ">Checkout Pages</button>
-                <button class="btn2 ">About Agency</button>
-
-            </div>
-
-        </div>
-    </div>
-    <!-- ------------------------------------------------------------------ -->
-    <div class="row ">
-        <div class="col " id="grindimg" align="center">
-            <h1 id="para1">Best packages</h1>
-            <h1 id="para3">POPULAR PACKAGES</h1>
-            <button><img src=" " alt=" " width="200px " height="250px "></button>
-            <button><img src=" " alt=" " width="200px " height="250px "></button>
-            <button><img src=" " alt=" " width="200px " height="250px "></button>
-            <button><img src=" " alt=" " width="200px " height="250px "></button><br>
-            <button><img src=" " alt=" " width="200px " height="250px "></button>
-            <button><img src=" " alt=" " width="200px " height="250px "></button>
-            <button><img src=" " alt=" " width="200px " height="250px "></button>
-            <button><img src=" " alt=" " width="200px " height="250px "></button><br>
-            <br>
-            <button class="btn3 ">Explore all packages</button>
-        </div>
-    </div><br>
-    <!-- ----------------------------------------------------------------------------- -->
-    <div class="row ">
-        <div class="col ">
-            <div class="conatiner p-6 ">
-                <img src="./images/1127427.jpg " alt=" " width="100% " height="700px ">
-            </div>
-        </div>
-
-    </div>
-    <div class="container p-6 ">
-        <h3>Have Some Questions About Tours and Travels?
-            <button type="submit ">Let's talk</button></h3>
-        <p>subscribe our newsletter!</p>
-
-    </div>
-
-    <div class="row ">
-        <footer class="bg-light text-center text-lg-start ">
-            <div class="container p-6 " id="contact">
-                <div class="row ">
-                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0 ">
-                        <h4 class="text-uppercase ">Our Awards</h4>
-
-                        <p>
-                            A travel agency is a private retailer or public service that provides travel and tourism-related services to the general public on behalf of accommodation or travel suppliers to offer different kinds of travelling packages for each destination.
-                        </p>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
-                        <h4 class="text-uppercase ">Contact Info</h4>
-                        <p>
-                            you can contact us for below given information
-                        </p>
-
-                        <ul class="list-unstyled mb-0 ">
-                            <li>
-
-                                <a href="#! " class="text-dark " id="textcolor">0123 456 789</a>
-                            </li>
-                            <li>
-                                <button type="submit "><img src="./images/icons8-instagram-26.png " alt=" "></button>
-                            </li>
+<!-- 
+                        <div class="dropdown">
+                            <button class="btn" type="button" id="dropdown_menu_button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-contenet"></div>
+                                <a class="dropdown-item" href="#">jhsdfjkan</a>
+                                <a class="dropdown-item" href="#">sgefas</a>
+                                <a class="dropdown-item" href="#">sdfa</a>
+                            </ul>
+                        </div> -->
                         </ul>
+                </nav>
+            </header>
+        </section>
+        <!-- ----------------------top banner section-------------------------- -->
+        <section>
+            <div class="row ">
+                <div class="col-12">
+                    <img class="top-banner" src="./images/1151032.jpg" alt="tourist-place">
+                    <div class="container ">
 
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
-                        <h4 class="text-uppercase mb-0 ">Recent trips</h4>
-
-                        <ul class="list-unstyled ">
-                            <li>
-                                <img src=" " alt=" " width="50px " height="50px ">
-                                <img src=" " alt=" " width="50px " height="50px "><br>
-                                <img src=" " alt=" " width="50px " height="50px ">
-                                <img src=" " alt=" " width="50px " height="50px ">
-                                <!-- <a href="#! " class="text-light ">Link </a> -->
-                            </li>
-                        </ul>
+                        <div class="top-banner-text">
+                            <p class="font-orange">Best Journey To Travel
+                            </p>
+                            <p class="font-white">
+                                WORLDWIDE SINCE <span id="top-banner-orange-text">1993</span></p>
+                        </div>
+                        <button class="button-orange-top-banner ">Checkout Pages</button>
+                        <button class="button-blue-top-banner ">About Agency</button>
                     </div>
                 </div>
+
+            </div>
+        </section>
+        <!-- --------------------------packages section ---------------------------------------- -->
+        <section>
+            <!-- <div class="container"> -->
+                <div class="col packages-section">
+                    <p class="font-orange">Best packages</p>
+                    <p class="font-black">POPULAR PACKAGES</p>
+                    <div class="row">
+                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
+                                src="./images/1.jpg " alt="hawa-mahal">
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
+                                src="./images/2.jpg " alt="red-fort">
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
+                                src="./images/9.jpg " alt="golden-temple">
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
+                                src="./images/10.jpg " alt="garden">
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
+                                src="./images/13.jpg" alt="monument">
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
+                                src="./images/6.jpg " alt="char-minar ">
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
+                                src="./images/11.jpg " alt="river">
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
+                                src="./images/8.jpg " alt="mountain">
+                        </div>
+                    </div>
+                    <div><button id="packages-section-button-bottom"> EXPLORE ALL PACKAGES</button></div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------------------------list section---------------------------------------------- -->
+        <!-- <section>
+        <div class="row ">
+            <div class="col-lg-12">
+                <div class="service-list">
+                    <p class="list-banner-text font-orange">Prepare for your travel <br><span class="font-black">BEST
+                            SERVICES <span></p>
+                    <img src="./images/1127427.jpg " alt=" " width="100% " height="700px ">
+                    <button class="hotel-list" type="submit">HOTEL BOOKING</button>
+                    <button class="airline-list" type="submit">AIR LINE BOOKING</button>
+                    <button class="taxi-list" type="submit">TAXI BOOKING</button>
+                    <button class="service-button" type="submit">EXPLORE ALL SERVICES</button>
+                </div>
+            </div>
+        </div>
+        </div> -->
+        <!-- --------------------------------------------------------- -->
+        <div class="conatiner-fluid" id="list-section">
+            <div class="row">
+                <h2 class="font-orange">Multipe benefits included</h2>
+                <h2 class="font-black">WHY CHOOSE US?</h2>
+                <p>So if you’re running a travel blog, it’s important to remember that <br> photos can’t do all the work
+                    for
+                    you in building an audience and establishing a loyal reader base</p>
+                <div class="column">
+                    <img class="img-responsive icon1" src="./images/iconwhy.jpg" alt="icon"><br>
+                    <h3>Handpicked hotels</h3>
+                    <p>From all over the World</p>
+
+                </div>
+                <div class="column">
+                    <img class="img-responsive icon2" src="./images/iconwhy2.jpg" alt="icon"><br>
+                    <h3>World Class Services</h3>
+                    <p>Avialabe 24/7 in all continents</p>
+                </div>
+                <div class="column">
+                    <img class="img-responsive icon3" src="./images/iconwhy3.jpg" alt="icon"><br>
+                    <h3>Best Gurantee Price </h3>
+                    <p>Compared with all other platforms </p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- ------------------------------h---------------------------------------- -->
+        <section>
+            <div class="row holiday-section">
+                <h2 class="font-orange">Holiday Destination</h2>
+                <h2 class="font-black">MOST POPULAR TOUR</h2>
+                <p>So if you’re running a travel blog, it’s important to remember that <br> photos can’t do all the work
+                    for
+                    you in building an audience and establishing a loyal reader base</p>
+
+                <div class="row-responsive" style="width: 1200px;">
+                    <div class="col-12 col-lg-6 "><img class="img-responsive " src="" alt="" width="100%"
+                            height="150px">
+                    </div>
+                    <div class="col-12 col-lg-3 "><img class="img-responsive " src="" alt="" width="100%"
+                            height="150px">
+                    </div>
+                    <div class="col-12 col-lg-3 "><img class="img-responsive " src="" alt="" width="100%"
+                            height="150px">
+                    </div>
+                </div>
+                <div class="row" style="width: 1200px;">
+                    <div class="col-12 col-lg-3 "><img class="img-responsive " src="" alt="" width="100%"
+                            height="150px">
+                    </div>
+                    <div class="col-12 col-lg-3 "><img class="img-responsive " src="" alt="" width="100%"
+                            height="150px">
+                    </div>
+                    <div class="col-12 col-lg-6 "><img class="img-responsive " src="" alt="" width="100%"
+                            height="150px">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- --------------------------------------- -->
+        <section>
+            <div class="container p-6 ">
+                <h3>Have Some Questions About Tours and Travels?
+                    <button type="submit ">Let's talk</button></h3>
+                <p>subscribe our newsletter!</p>
+
             </div>
 
-            <div class="text-center p-3 ">
+            <div class="row ">
+                <footer class="bg-light text-center text-lg-start ">
+                    <div class="container p-6 " id="contact">
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 ">
+                                <h4 class="text-uppercase ">Our Awards</h4>
+
+                                <p>
+                                    A travel agency is a private retailer or public service that provides travel and
+                                    tourism-related services to the general public on behalf of accommodation or travel
+                                    suppliers to offer different kinds of travelling packages for each destination.
+                                </p>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+                                <h4 class="text-uppercase ">Contact Info</h4>
+                                <p>
+                                    you can contact us for below given information
+                                </p>
+
+                                <ul class="list-unstyled mb-0 ">
+                                    <li>
+
+                                        <a href="#! " class="text-dark " id="textcolor">0123 456 789</a>
+                                    </li>
+                                    <li>
+                                        <button type="submit "><img src="./images/icons8-instagram-26.png "
+                                                alt=" "></button>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+                                <h4 class="text-uppercase mb-0 ">Recent trips</h4>
+
+                                <ul class="list-unstyled ">
+                                    <li>
+                                        <img src=" " alt=" " width="50px " height="50px ">
+                                        <img src=" " alt=" " width="50px " height="50px "><br>
+                                        <img src=" " alt=" " width="50px " height="50px ">
+                                        <img src=" " alt=" " width="50px " height="50px ">
+                                        <!-- <a href="#! " class="text-light ">Link </a> -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center p-3 ">
+                    </div>
+                </footer>
             </div>
-        </footer>
     </div>
+    </section>
 </body>
 
 
-</html>
 
 </html>

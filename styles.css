@@ -1,22 +1,62 @@
-.navbar {
-    background-color: white;
-    border-color: white;
-    float: right;
-    width: 100%;
+body {
+    margin: 10px;
 }
 
-#navbutton {
+.dropdown-menu-hidden {
+    display: none;
+}
+
+#navbar_menu {
+    display: block;
+}
+
+@media(max-width:992px) {
+    .dropdown-menu-hidden {
+        display: contents;
+    }
+    #navbar_menu {
+        display: none;
+    }
+}
+
+.container-fluid {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width:1200px) {
+    #navbar-menu {
+        display: none;
+    }
+}
+
+#navbar_button {
     background: orange;
     border-radius: 50px;
+}
+
+.bar {
+    width: 20px;
+    height: 3px;
+    background-color:orange;
+    margin: 3px 0;
 }
 
 #logo {
     height: 70px;
     float: left;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
-.backgroundimg {
+@media(max-width:576px) {
+    #logo {
+        width: 200px;
+    }
+}
+
+.top-banner {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -32,29 +72,30 @@
     color: aliceblue;
 }
 
-#para1 {
+.font-orange {
     font-family: 'Dancing Script', cursive;
     color: orange;
     text-align: center;
+    font-size: 45px;
 }
 
-#para2 {
+.font-white {
     font-family: 'Anton', sans-serif;
     color: white;
     text-align: center;
-    font-size: 50p;
+    font-size: 50px;
 }
 
-#para3 {
+.font-black {
     font-family: 'Anton', sans-serif;
     color: black;
     text-align: center;
     font-size: 50px;
 }
 
-.container .btn1 {
+.container .button-orange-top-banner {
     position: absolute;
-    width: 180px;
+    width: 175px;
     top: 70%;
     left: 40%;
     transform: translate(-50%, -50%);
@@ -69,9 +110,9 @@
     text-align: center;
 }
 
-.container .btn2 {
+.container .button-blue-top-banner {
     position: absolute;
-    width: 180px;
+    width: 175px;
     top: 70%;
     right: 30%;
     transform: translate(-50%, -50%);
@@ -86,14 +127,15 @@
     text-align: center;
 }
 
-@media (max-width: 1128px) {
-    .container .btn1 {
+@media (max-width: 1200px) {
+    .container .button-orange-top-banner {
         width: 145px;
+        position: absolute;
         left: 35%;
         font-size: 14px;
         padding: 6px 12px;
     }
-    .container .btn2 {
+    .container .button-blue-top-banner {
         width: 145px;
         right: 20%;
         font-size: 14px;
@@ -102,13 +144,13 @@
 }
 
 @media (max-width: 768px) {
-    .container .btn1 {
+    .container .button-orange-top-banner {
         width: 80px;
         left: 35%;
         font-size: 8px;
         padding: 6px 8px;
     }
-    .container .btn2 {
+    .container .button-blue-top-banner {
         width: 80px;
         right: 20%;
         font-size: 8px;
@@ -116,14 +158,23 @@
     }
 }
 
-.textonbg {
+.top-banner-text {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.btn3 {
+#top-banner-orange-text {
+    color: rgb(253, 162, 77);
+}
+
+.packages-section {
+    text-align: center;
+}
+
+#packages-section-button-bottom {
+    margin: 20px;
     background-color: rgb(75, 144, 247);
     color: white;
     font-size: 16px;
@@ -133,6 +184,157 @@
     border-radius: 50px;
 }
 
-#grindimg {
-    align-content: center;
+.hotel-list {
+    position: absolute;
+    top: 30%;
+    margin: 10px;
+    height: 100px;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.service-list .airline-list {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 40%;
+    margin: 10px;
+    height: 100px;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.service-list .taxi-list {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 40%;
+    margin: 10px;
+    height: 100px;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.service-list .hotel-list:hover {
+    background-color: orange;
+}
+
+.service-list .airline-list:hover {
+    background-color: orange;
+}
+
+.service-list .taxi-list:hover {
+    background-color: orange;
+}
+
+.service-list .service-button {
+    position: absolute;
+    top: 87%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    margin: 10px;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30%;
+    height: 75px;
+    background-color: rgb(75, 144, 247);
+    color: white;
+    font-size: 25px;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.list-banner-text {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#list-banner-orange-text {
+    color: rgb(253, 162, 77);
+}
+
+.icon1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#list-section {
+    text-align: center;
+}
+
+.icon2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagesize {
+    width: 200px;
+    height: 250px;
+}
+
+.holiday-section {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+}
+
+@media (max-width:992px) {
+    .tourconatiner {
+        width: 50%;
+    }
+}
+
+.package-images {
+    height: 175px;
+    width: 100%;
+    margin: 5px;
+}
+
+@media(max-width:768px) {
+    .a {
+        width: 70%;
+    }
+}
+
+/* 576px	768px	992px	1200px */
+
+@media(max-width:768px) {
+    .b {
+        width: 60%;
+    }
 }
