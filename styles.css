@@ -38,6 +38,8 @@
 #navbar_button {
     background: #fc8d1f;
     border-radius: 20px;
+    color: #f0f8ff;
+    font-weight: 500;
 }
 
 .bar {
@@ -116,8 +118,6 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 450px;
-    object-fit: cover;
-    object-position: center;
     background-position: center center;
     background-size: cover;
     background-color: #85b3f8;
@@ -152,6 +152,7 @@
     border-radius: 50px;
     text-align: center;
     z-index: 1;
+    font-weight: 500;
 }
 
 .button-left-top-banner {
@@ -178,7 +179,7 @@
         font-size: 30px;
     }
     .top-banner-heading-content {
-        top: 150px;
+        top: 180px;
     }
 }
 
@@ -221,10 +222,7 @@
 .list-banner-wrap {
     background-image: url("./images/listbackground1.jpg");
     background-repeat: no-repeat;
-    /* width: 100vw; */
     height: 500px;
-    object-fit: cover;
-    object-position: center;
     background-position: center center;
     background-size: cover;
     background-color: #d3dae6;
@@ -391,14 +389,6 @@
     max-width: 700px;
 }
 
-/* .holiday-section-paragraph{  */
-
-/* max-width: 750px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center !important; */
-
 .holiday-banner-heading {
     color: #fc8d1f;
     font-family: 'Dancing Script', cursive;
@@ -414,13 +404,11 @@ holiday-banner-sub-heading {
 }
 
 .holiday-image {
-    /* width: fit-content; */
     padding: 0px 0px 0px;
 }
 
 .holiday-image-content {
     padding: 10px;
-    /* margin: 10px; */
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -431,9 +419,8 @@ holiday-banner-sub-heading {
 .world-banner {
     margin-top: 50px;
     position: relative;
-    /* width: 100%; */
     background-color: #37cee9;
-    height: 300px;
+    height: 400px;
 }
 
 .heading {
@@ -443,23 +430,12 @@ holiday-banner-sub-heading {
 }
 
 .world-map-heading {
-    color: #f0f8ff;
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
+    margin-top: 50px;
 }
 
-.world-map-sub-heading1 {
-    /* font-family: 'Anton', sans-serif; */
-    color: #f0f8ff;
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.world-map-sub-heading2 {
-    font-family: 'Anton', sans-serif;
+.world-map-heading div {
     color: #f0f8ff;
     font-size: 30px;
-    font-weight: bold;
 }
 
 .world-map-banner {
@@ -468,17 +444,11 @@ holiday-banner-sub-heading {
     max-height: 300px;
 }
 
-@media(max-width:568px) {
-    .world-map-heading {
-        font-size: 18px;
-    }
-    .world-map-sub-heading1 {
-        font-size: 18px;
-    }
-    .world-map-sub-heading2 {
-        font-size: 18px;
-    }
+.world-map-heading p {
+    color: #f0f8ff;
 }
+
+@media(max-width:568px) {}
 
 /* ------------------form section-------------------- */
 
@@ -493,10 +463,11 @@ holiday-banner-sub-heading {
     justify-content: center;
 }
 
-.xml{
+.form-stats {
     margin-top: 50px;
     /* margin-left: 0px; */
 }
+
 .form h2 {
     text-align: center;
 }
@@ -544,8 +515,27 @@ holiday-banner-sub-heading {
     text-align: center;
     padding: 40px;
     /* left: 50%; */
-    /* width: 60% */
-    /* margin-left: 0px; */
+    width: 65%
+}
+
+.form-stats {
+    color: azure;
+    display: flex;
+    /* margin-left: 100px; */
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.form-stats p {
+    font-size: 30px;
+    color: azure;
+    font-weight: bolder;
+}
+
+.form h3 {
+    display: grid;
 }
 
 @media(max-width:992px) {
@@ -555,17 +545,12 @@ holiday-banner-sub-heading {
 }
 
 @media(max-width:768px) {
-    .form {
-        /* border: 2px solid red; */
-        /* position: relative; */
-        /* margin-right: 24px; */
-        /* margin-top: 20px; */
-        /* margin-left: auto; */
-        width: 100%;
-        /* height: 100%; */
-        /* text-align: center; */
-        /* border-radius: 0px; */
-        left: 0px;
+    .form-banner div {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .form-stats {
+        display: none;
     }
 }
 
@@ -797,6 +782,10 @@ holiday-banner-sub-heading {
 
 .control ul li.selected {
     background: transparent;
+}
+
+.review-col-left {
+    margin-bottom: 50px;
 }
 
 /* ------------------question section--------------- */
