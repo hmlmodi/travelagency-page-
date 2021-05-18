@@ -2,283 +2,842 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <title>header</title>
-
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css"
+        integrity="sha512-YBSrHBAMjFhWHodf0RF58XB/x9lmuwBtyJv1LWDHQa1nOaWNXfG3Etc/lEXfW+qBx8ne79JnzccDs59je/ccVA=="
+        crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel Agency</title>
 </head>
 
 <body>
-    <div class="conatianer-fluid">
-        <!-- ---------------------nav-bar-section------------------------ -->
+    <div class="wrap-container">
+        <!-- -------------------------------navbar-menu-section-------------------------- -->
         <section id="navbar_section">
             <header>
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                        <img src="./images/tarvcel buddies1.png" alt="site-logo" id="logo">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <div class="container-fluid navbar-content">
+                        <img class="img-fluid img-responsive" src="./images/logo12.jpg" alt="site-logo" id="site_logo">
                         <div id="navbar_menu">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">HOME</a>
+                                    <a class="nav-link" id="home" href="#">HOME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">ABOUTUS</a>
+                                    <a class="nav-link" id="aboutus" href="#">ABOUTUS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">SERVICES</a>
+                                    <a class="nav-link" id="services" href="#">SERVICES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#">TOUR</a>
+                                    <a class="nav-link " id="tour" href="#">TOUR</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#">PACKAGES</a>
+                                    <a class="nav-link " id="packages" href="#">PACKAGES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#">BLOG</a>
+                                    <a class="nav-link " id="blog" href="#">BLOG</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#">CONTACT</a>
+                                    <a class="nav-link " id="contact" href="#">CONTACT</a>
                                 </li>
                                 <li class="nav-item">
                                     <button class="btn navbar-btn" id="navbar_button">GET INQUIRY</button>
                                 </li>
-                        </div>
-                        </li>
-                        <div class="dropdown-menu-hidden">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </div>
-
-<!-- 
-                        <div class="dropdown">
-                            <button class="btn" type="button" id="dropdown_menu_button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <div class="dropdown-contenet"></div>
-                                <a class="dropdown-item" href="#">jhsdfjkan</a>
-                                <a class="dropdown-item" href="#">sgefas</a>
-                                <a class="dropdown-item" href="#">sdfa</a>
-                            </ul>
-                        </div> -->
-                        </ul>
+                        <div class="btn-group" id="dropdown_menu_hidden">
+                            <input type="checkbox" id="open_side_bar_menu" style="display: none;">
+                            <label for="open_side_bar_menu">
+                                <div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                </div>
+                            </label>
+                            <div id="sidebar_menu">
+                                <ul class="menu">
+                                    <li><a href="#">HOME</a></li>
+                                    <li><a href="#">ABOUTUS</a></li>
+                                    <li><a href="#">SERVICES</a></li>
+                                    <li><a href="#">TOUR</a></li>
+                                    <li><a href="#">PACKAGES</a></li>
+                                    <li><a href="#">BLOG</a></li>
+                                    <li><a href="#">CONTACT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </header>
         </section>
-        <!-- ----------------------top banner section-------------------------- -->
-        <section>
-            <div class="row ">
-                <div class="col-12">
-                    <img class="top-banner" src="./images/1151032.jpg" alt="tourist-place">
-                    <div class="container ">
 
-                        <div class="top-banner-text">
-                            <p class="font-orange">Best Journey To Travel
-                            </p>
-                            <p class="font-white">
-                                WORLDWIDE SINCE <span id="top-banner-orange-text">1993</span></p>
-                        </div>
-                        <button class="button-orange-top-banner ">Checkout Pages</button>
-                        <button class="button-blue-top-banner ">About Agency</button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- --------------------------packages section ---------------------------------------- -->
-        <section>
-            <!-- <div class="container"> -->
-                <div class="col packages-section">
-                    <p class="font-orange">Best packages</p>
-                    <p class="font-black">POPULAR PACKAGES</p>
-                    <div class="row">
-                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
-                                src="./images/1.jpg " alt="hawa-mahal">
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
-                                src="./images/2.jpg " alt="red-fort">
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
-                                src="./images/9.jpg " alt="golden-temple">
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
-                                src="./images/10.jpg " alt="garden">
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
-                                src="./images/13.jpg" alt="monument">
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
-                                src="./images/6.jpg " alt="char-minar ">
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
-                                src="./images/11.jpg " alt="river">
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3"><img class="img-responsive package-images"
-                                src="./images/8.jpg " alt="mountain">
-                        </div>
-                    </div>
-                    <div><button id="packages-section-button-bottom"> EXPLORE ALL PACKAGES</button></div>
-                </div>
-            </div>
-        </section>
-        <!-- -------------------------------list section---------------------------------------------- -->
-        <!-- <section>
-        <div class="row ">
-            <div class="col-lg-12">
-                <div class="service-list">
-                    <p class="list-banner-text font-orange">Prepare for your travel <br><span class="font-black">BEST
-                            SERVICES <span></p>
-                    <img src="./images/1127427.jpg " alt=" " width="100% " height="700px ">
-                    <button class="hotel-list" type="submit">HOTEL BOOKING</button>
-                    <button class="airline-list" type="submit">AIR LINE BOOKING</button>
-                    <button class="taxi-list" type="submit">TAXI BOOKING</button>
-                    <button class="service-button" type="submit">EXPLORE ALL SERVICES</button>
-                </div>
-            </div>
-        </div>
-        </div> -->
-        <!-- --------------------------------------------------------- -->
-        <div class="conatiner-fluid" id="list-section">
+        <!-- --------------------- top-banner-section --------------------------------------------------------->
+        <section id="top_banner">
             <div class="row">
-                <h2 class="font-orange">Multipe benefits included</h2>
-                <h2 class="font-black">WHY CHOOSE US?</h2>
-                <p>So if you’re running a travel blog, it’s important to remember that <br> photos can’t do all the work
-                    for
-                    you in building an audience and establishing a loyal reader base</p>
-                <div class="column">
-                    <img class="img-responsive icon1" src="./images/iconwhy.jpg" alt="icon"><br>
-                    <h3>Handpicked hotels</h3>
-                    <p>From all over the World</p>
-
+                <div class="top-banner-image">
+                    <div class="top-banner-heading-content text-center">
+                        <p class="cursive-heading top-banner-heading">Best Journey To Travel
+                            <span class="top-banner-co-heading"> WORLDWIDE SINCE 1993</span></p>
+                    </div>
+                    <div class="top-banner-buttons">
+                        <button class="button-left-top-banner">Checkout Pages</button>
+                        <button class="button-right-top-banner">About Agency</button>
+                    </div>
                 </div>
-                <div class="column">
-                    <img class="img-responsive icon2" src="./images/iconwhy2.jpg" alt="icon"><br>
-                    <h3>World Class Services</h3>
+            </div>
+
+
+        </section>
+        <!-- ----------------------------packages-section------------------------------ -->
+        <section id="packages_ section" class="text-center">
+            <p class="packages-heading cursive-heading">Best packages<span class="bold-heading">POPULAR
+                    PACKAGES</span></p>
+            <div class="container packages-section">
+                <div class="row">
+                    <div class="col-6  col-md-3 "><img class="image-responsive package-images" src="./images/1.jpg "
+                            alt="hawa-mahal">
+                    </div>
+                    <div class="col-6  col-md-3 "><img class="image-responsive package-images" src="./images/20.jpg "
+                            alt="rajasathan-monument">
+                    </div>
+                    <div class="col-6  col-md-3 "><img class="image-responsive package-images" src="./images/9.jpg "
+                            alt="golden-temple">
+                    </div>
+                    <div class="col-6  col-md-3 "><img class="image-responsive package-images" src="./images/10.jpg "
+                            alt="garden">
+                    </div>
+                    <div class="col-6  col-md-3 "><img class="image-responsive package-images" src="./images/13.jpg"
+                            alt="monument">
+                    </div>
+                    <div class="col-6  col-md-3 "><img class="image-responsive package-images" src="./images/15.jpg "
+                            alt="char-minar ">
+                    </div>
+                    <div class="col-6  col-md-3 "><img class="image-responsive package-images" src="./images/11.jpg "
+                            alt="river">
+                    </div>
+                    <div class="col-6  col-md-3 "><img class="image-responsive package-images" src="./images/8.jpg "
+                            alt="mountain">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="packages_section_bottom_button" type="button"> EXPLORE ALL PACKAGES</button>
+            </div>
+        </section>
+        <!-- -------------------------------list banner section---------------------------------------------- -->
+        <section id="list-banner">
+            <div class="list-banner-wrap row">
+                <!-- <img src="./images/listbackground1.jpg" alt="city-view" id="list_banner"> -->
+                <div class="col list-banner-container">
+                    <div class="list-banner-heading cursive-heading">Prepare for your travel<span
+                            class="list-banner-sub-heading">BEST
+                            SERVICES </span></div>
+                    <div class="list-button">
+                        <button class="hotel-list hover-btn" type="button"><img class="list-icon"
+                                src="./images/hotelicon.png" alt="">HOTEL BOOKING <br> Lorem ipsum
+                            consectetur</button>
+                        <button class="airline-list hover-btn" type="button"><img class="list-icon"
+                                src="./images/airlineicon.png" alt="">AIR LINE BOOKING <br> Lorem ipsum
+                            consectetur</button>
+                        <button class="taxi-list hover-btn" type="button"><img class="list-icon"
+                                src="./images/taxiicon.jpg" alt="">TAXI BOOKING <br> Lorem ipsum
+                            consectetur</button>
+                    </div>
+                    <button class="service-button" type="button">EXPLORE ALL SERVICES</button>
+                </div>
+            </div>
+        </section>
+        <!-- --------------------------whyus banner section ------------------------------- -->
+        <section id="whyus_banner_section">
+            <div class="row whyus-banner container">
+                <div class="whyus-banner-heading cursive-heading">Multipe benefits included</div>
+                <div class="whyus-banner-sub-heading bold-heading">WHY CHOOSE US</div>
+                <div class="whyus-banner-paragraph">
+                    <p>
+                        So if you’re running a travel blog, it’s important that photos can’t do
+                        all the work for you in building an audience and establishing a loyal reader base
+                    </p>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <img class="img-responsive icon" src="./images/iconwhy.jpg" alt="icon1"><br>
+                    <h4>Handpicked hotels</h4>
+                    <p>From all over the World</p>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <img class="img-responsive icon" src="./images/iconwhy2.jpg" alt="icon2"><br>
+                    <h4>World Class Services</h4>
                     <p>Avialabe 24/7 in all continents</p>
                 </div>
-                <div class="column">
-                    <img class="img-responsive icon3" src="./images/iconwhy3.jpg" alt="icon"><br>
-                    <h3>Best Gurantee Price </h3>
+                <div class="col-12 col-sm-4">
+                    <img class="img-responsive icon" src="./images/iconwhy3.jpg" alt="icon3"><br>
+                    <h4>Best Gurantee Price </h4>
                     <p>Compared with all other platforms </p>
                 </div>
             </div>
-        </div>
         </section>
-        <!-- ------------------------------h---------------------------------------- -->
-        <section>
-            <div class="row holiday-section">
-                <h2 class="font-orange">Holiday Destination</h2>
-                <h2 class="font-black">MOST POPULAR TOUR</h2>
-                <p>So if you’re running a travel blog, it’s important to remember that <br> photos can’t do all the work
-                    for
-                    you in building an audience and establishing a loyal reader base</p>
+        <!------------------holiday section --------------->
+        <section id="hoiday-banner-section">
+            <div class="row container holiday-section">
+                <h2 class="holiday-banner-heading">Holiday Destination</h2>
+                <h2 class="holiday-banner-sub-heading">MOST POPULAR TOUR</h2>
+                <p class="holiday-section-paragraph">So if you’re running a travel blog, it’s important to remember that
+                    photos can’t do all the work
+                    for you in building an audience and establishing a loyal reader base</p>
+                <div class="col-sm-12 col-md-6">
 
-                <div class="row-responsive" style="width: 1200px;">
-                    <div class="col-12 col-lg-6 "><img class="img-responsive " src="" alt="" width="100%"
-                            height="150px">
+                    <div class=" row holiday-image"><img class="image-responsive holiday-image-content "
+                            src="./images/london.jpg" alt="london">
                     </div>
-                    <div class="col-12 col-lg-3 "><img class="img-responsive " src="" alt="" width="100%"
-                            height="150px">
-                    </div>
-                    <div class="col-12 col-lg-3 "><img class="img-responsive " src="" alt="" width="100%"
-                            height="150px">
+                    <div class="row">
+                        <div class="col-6 holiday-image"><img class="image-responsive  holiday-image-content"
+                                src="./images/japan.jpg" alt="japan">
+                        </div>
+                        <div class="col-6 holiday-image"><img class="image-responsive  holiday-image-content"
+                                src="./images/paris.jpg" alt="paris">
+                        </div>
                     </div>
                 </div>
-                <div class="row" style="width: 1200px;">
-                    <div class="col-12 col-lg-3 "><img class="img-responsive " src="" alt="" width="100%"
-                            height="150px">
+                <div class="col-sm-12 col-md-6">
+                    <div class="row">
+
+                        <div class="col-6 holiday-image"><img class="image-responsive  holiday-image-content"
+                                src="./images/canada.jpg" alt="canada">
+                        </div>
+                        <div class="col-6 holiday-image"><img class="image-responsive  holiday-image-content"
+                                src="./images/usa.jpg" alt="usa">
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-3 "><img class="img-responsive " src="" alt="" width="100%"
-                            height="150px">
-                    </div>
-                    <div class="col-12 col-lg-6 "><img class="img-responsive " src="" alt="" width="100%"
-                            height="150px">
+                    <div class=" row holiday-image"><img class="image-responsive  holiday-image-content"
+                            src="./images/china.jpg" alt="china">
                     </div>
                 </div>
-
             </div>
         </section>
-        <!-- --------------------------------------- -->
-        <section>
-            <div class="container p-6 ">
-                <h3>Have Some Questions About Tours and Travels?
-                    <button type="submit ">Let's talk</button></h3>
-                <p>subscribe our newsletter!</p>
-
+        <!-- -----------------------world map image section------------------------ -->
+        <section id="worldmap-image">
+            <div class="row world-banner">
+                <div class="col-6"></div>
+                <div class="col-12 col-sm-6 world-map-heading">
+                    <div class="world-map-heading1 cursive-heading">
+                        Best tour
+                    </div>
+                    <div class="world-map-co-heading2">
+                        Journey to travel
+                    </div>
+                    <div class="world-map-co-heading3 bold-heading">
+                        World Wide Since 1993
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas incidunt unde tempora dolorem,</p>
+                </div>
             </div>
+        </section>
+        <!-- -----------------------form section---------------------------- -->
+        <section id="form-section">
+            <div class="row form-banner ">
+                <div class="col-6 form-stats">
+                    <h2 class="cursive-heading">
+                        best tour
+                    </h2>
+                    <p>
+                        Book your holiday by interset
+                    </p>
+                    <ul>17+</ul>
+                    <ul>200+</ul>
+                    <ul>16+</ul>
+                    <ul>17+</ul>
+                </div>
+                <div class="col-md-6 col-12">
+                    <form class="form" action="" method="post">
+                        <h3 class="form-heading">
+                            WAITING FOR
+                            <span>
+                                WHAT ARE YOU
+                            </span>
+                        </h3>
+                        <input type="text" required placeholder="John Dee">
+                        <input type="email" placeholder="EMAIL" required>
+                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="CONTACT NUMBER" required>
+                        <label for="customerMessage">Message</label><br><input type="text">
+                        <button id="form-bottom-button" type="submit">INQUIRY NOW</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- -------------------------------news and blogs section---------------     -->
+        <div class="container">
+            <section id="news_blog_section">
+                <div class="row news-blog">
+                    <h2 class="news-section-heading">News & Blogs <br>
+                        <span class="news-section-sub-heading">LATEST BLOG</h2></span>
+                    <p class="">This was a trip of a lifetime. We worked well together, came up <br> with an awesome
+                        itinerary for 6 weeks to New Zealand and Australia</p>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 news-blog-row"><img
+                            class="img-fluid  blog-left-image" src="./images/londoncarousal.jpg" alt="london">
+                        <div class="blog-date-place">
+                            <span class="blog-date">
+                                <i class="bi bi-clock clock-icon"></i>
+                                <p>10 january 2020</p>
+                            </span>
+                            <span class="blog-date">
+                                <i class="bi bi-tag label-icon"></i>
+                                <p class="blog-tag">
+                                    Journey</p>
+                            </span>
+                        </div>
+                        <p class="blog-paragraph"><span class="left-blog-heading">
+                                This was a trip of a lifetime. We worked well together, came up with an awesome
+                                itinerary for 6 weeks to New Zealand and Australia
+                            </span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
+                            repellat ab amet doloremque, recusandae tempora iste fugiat quisquam ullam, hic, optio
+                            minus debitis nihil quo! Illum, eaque provident. Libero, hic.
+                            repellat ab amet doloremque, recusandae tempora iste fugiat quisquam ullam, hic, optio
+                            minus debitis nihil quo! Illum, eaque prov
+                            amet doloremque, recusandae tempora iste fugiat quisquam ullam, hic, optio
+                            minus debitis nihil quo!mque, recusandae tempora iste fugiat quisquam ullam repellat ab
+                            amet doloremque, recusandae tempora amet
+                        </p>
+                        <div class="blog-author-photo-name">
+                            <img class="blog-author" src="./images/test2.jpg" alt="">
+                            <span>by Marcus brownie</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 news-blog-row">
+                        <div class="row">
+                            <div class="col-6  blog">
+                                <img class=" img-fluid blog-img img-responsive blog-left-top-image"
+                                    src="./images/usa.jpg " alt=" ">
+                                <div class="blog-date-place">
+                                    <span class="blog-date">
+                                        <i class="bi bi-clock clock-icon"></i>
+                                        <p>10 january 2020</p>
+                                    </span>
+                                    <span class="blog-date">
+                                        <i class="bi bi-tag label-icon"></i>
+                                        <p class="blog-tag">
+                                            Journey</p>
+                                    </span>
+                                </div>
+                                <p class="right-blog-heading">Lorem ipsum dolor sit amet consectetur
+                                    elit.</p>
+                                <div class="blog-author-photo-name">
+                                    <img class="blog-author" src="./images/test1.jpg" alt="">
+                                    <span>by Marcus brownie</span>
 
-            <div class="row ">
-                <footer class="bg-light text-center text-lg-start ">
-                    <div class="container p-6 " id="contact">
-                        <div class="row ">
-                            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 ">
-                                <h4 class="text-uppercase ">Our Awards</h4>
+                                </div>
+                                <img class="img-fluid img-responsive blog-right-top-image" src="./images/canada.jpg "
+                                    alt=" ">
+                                <div class="blog-date-place">
+                                    <span class="blog-date">
+                                        <i class="bi bi-clock clock-icon"></i>
+                                        <p>10 january 2020</p>
+                                    </span>
+                                    <span class="blog-date">
+                                        <i class="bi bi-tag label-icon"></i>
+                                        <p class="blog-tag">
+                                            Journey</p>
+                                    </span>
+                                </div>
+                                <p class="right-blog-heading">Lorem ipsum dolor sit amet consectetur
+                                    elit.</p>
+                                <div class="blog-author-photo-name">
+                                    <img class="blog-author" src="./images/test1.jpg" alt="">
+                                    <span>by Marcus brownie</span>
 
-                                <p>
-                                    A travel agency is a private retailer or public service that provides travel and
-                                    tourism-related services to the general public on behalf of accommodation or travel
-                                    suppliers to offer different kinds of travelling packages for each destination.
-                                </p>
+                                </div>
                             </div>
+                            <div class="col-6">
+                                <img class="img-fluid img-responsive blog-left-bottom-image" src="./images/canada.jpg "
+                                    alt=" ">
+                                <div class="blog-date-place">
+                                    <span class="blog-date">
+                                        <i class="bi bi-clock clock-icon"></i>
+                                        <p>10 january 2020</p>
+                                    </span>
+                                    <span class="blog-date">
+                                        <i class="bi bi-tag label-icon"></i>
+                                        <p class="blog-tag">
+                                            Journey</p>
+                                    </span>
+                                </div>
+                                <p class="right-blog-heading">Lorem ipsum dolor sit amet consectetur
+                                    elit.</p>
+                                <div class="blog-author-photo-name">
+                                    <img class="blog-author" src="./images/test1.jpg" alt="">
+                                    <span>by Marcus brownie</span>
 
-                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
-                                <h4 class="text-uppercase ">Contact Info</h4>
-                                <p>
-                                    you can contact us for below given information
-                                </p>
+                                </div>
+                                <img class="img-fluid img-responsive blog-right-bottom-image" src="./images/usa.jpg "
+                                    alt=" ">
+                                <div class="blog-date-place">
+                                    <span class="blog-date">
+                                        <i class="bi bi-clock clock-icon"></i>
+                                        <p>10 january 2020</p>
+                                    </span>
+                                    <span class="blog-date">
+                                        <i class="bi bi-tag label-icon"></i>
+                                        <p class="blog-tag">
+                                            Journey</p>
+                                    </span>
+                                </div>
+                                <p class="right-blog-heading">Lorem ipsum dolor sit amet consectetur
+                                    elit.</p>
+                                <div class="blog-author-photo-name">
+                                    <img class="blog-author" src="./images/test1.jpg" alt="">
+                                    <span>
+                                        by Marcus brownie
+                                    </span>
 
-                                <ul class="list-unstyled mb-0 ">
-                                    <li>
-
-                                        <a href="#! " class="text-dark " id="textcolor">0123 456 789</a>
-                                    </li>
-                                    <li>
-                                        <button type="submit "><img src="./images/icons8-instagram-26.png "
-                                                alt=" "></button>
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
-                                <h4 class="text-uppercase mb-0 ">Recent trips</h4>
-
-                                <ul class="list-unstyled ">
-                                    <li>
-                                        <img src=" " alt=" " width="50px " height="50px ">
-                                        <img src=" " alt=" " width="50px " height="50px "><br>
-                                        <img src=" " alt=" " width="50px " height="50px ">
-                                        <img src=" " alt=" " width="50px " height="50px ">
-                                        <!-- <a href="#! " class="text-light ">Link </a> -->
-                                    </li>
-                                </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <!-- ----------------------------------carousal section---------------------------- -->
+            <section id="carousel_section">
+                <h2 class="carousal-section-heading">client say's <br>
+                    <span class="news-section-sub-heading">CUSTOMER REVIEW</h2></span>
+                <p class="carousal-info-paragraph">This was a trip of a lifetime. We worked well together, came up
+                    <br> with an awesome
+                    itinerary for 6 weeks to New Zealand and Australia</p>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
-                    <div class="text-center p-3 ">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <div class="row ">
+                                <div class="review-col-left col-12 col-sm-12 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="customer-image">
+                                                <img class="img-fluid carousal-image" src="./images/test1.jpg" alt="">
+                                                <span class="image-quote">
+                                                    <img width="16px" height="16px"
+                                                        src="./images/bxs-quote-alt-left.svg" alt="quote">
+                                                </span>
+                                            </div>
+
+                                            <div class="customer-review">
+                                                <span>
+                                                    <span>
+                                                        <strong>
+                                                            Robert Johnson <br>
+                                                        </strong>
+                                                    </span>
+                                                    <span>
+                                                        Sydney,Australia 20th August 2020 <br>
+                                                    </span>
+                                                    <p class="carousal-star">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                    </p>
+                                                </span>
+                                            </div>
+                                            <p>This was a trip of a lifetime. We worked well together, came up
+                                                with an
+                                                awesome itinerary
+                                                for 6 weeks to New Zealand and Australia. You name it we were
+                                                going to
+                                                do
+                                                it. This truly
+                                                was an itinerary with planes, trains & automobiles. Let's not
+                                                forget to
+                                                include boats,
+                                                helicopter, camel and kayak. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-col-right col-12 col-sm-12 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="customer-image">
+                                                <img class="img-fluid carousal-image" src="./images/test2.jpg" alt="">
+                                                <span class="image-quote">
+                                                    <img width="16px" height="16px"
+                                                        src="./images/bxs-quote-alt-left.svg" alt="quote">
+                                                </span>
+                                            </div>
+
+                                            <div class="customer-review">
+                                                <span>
+                                                    <span>
+                                                        <strong>
+                                                            Robert Johnson <br>
+                                                        </strong>
+                                                    </span>
+                                                    <span>
+                                                        Sydney,Australia 20th August 2020 <br>
+                                                    </span>
+                                                    <p class="carousal-star">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                    </p>
+                                                </span>
+                                            </div>
+                                            <p>This was a trip of a lifetime. We worked well together, came up
+                                                with an
+                                                awesome itinerary
+                                                for 6 weeks to New Zealand and Australia. You name it we were
+                                                going to
+                                                do
+                                                it. This truly
+                                                was an itinerary with planes, trains & automobiles. Let's not
+                                                forget to
+                                                include boats,
+                                                helicopter, camel and kayak. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item">
+
+
+                            <div class="row">
+                                <div class="review-col-left col-12 col-sm-12 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="customer-image">
+                                                <img class="img-fluid carousal-image" src="./images/test1.jpg" alt="">
+                                                <span class="image-quote">
+                                                    <img width="16px" height="16px"
+                                                        src="./images/bxs-quote-alt-left.svg" alt="quote">
+                                                </span>
+                                            </div>
+
+                                            <div class="customer-review">
+                                                <span>
+                                                    <span>
+                                                        <strong>
+                                                            Robert Johnson <br>
+                                                        </strong>
+                                                    </span>
+                                                    <span>
+                                                        Sydney,Australia 20th August 2020 <br>
+                                                    </span>
+                                                    <p class="carousal-star">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                    </p>
+                                                </span>
+                                            </div>
+                                            <p>This was a trip of a lifetime. We worked well together, came up
+                                                with an
+                                                awesome itinerary
+                                                for 6 weeks to New Zealand and Australia. You name it we were
+                                                going to
+                                                do
+                                                it. This truly
+                                                was an itinerary with planes, trains & automobiles. Let's not
+                                                forget to
+                                                include boats,
+                                                helicopter, camel and kayak. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-col-right col-12 col-sm-12 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="customer-image">
+                                                <img class="img-fluid carousal-image" src="./images/test2.jpg" alt="">
+                                                <span class="image-quote">
+                                                    <img width="16px" height="16px"
+                                                        src="./images/bxs-quote-alt-left.svg" alt="quote">
+                                                </span>
+                                            </div>
+
+                                            <div class="customer-review">
+                                                <span>
+                                                    <span>
+                                                        <strong>
+                                                            Robert Johnson <br>
+                                                        </strong>
+                                                    </span>
+                                                    <span>
+                                                        Sydney,Australia 20th August 2020 <br>
+                                                    </span>
+                                                    <p class="carousal-star">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                    </p>
+                                                </span>
+                                            </div>
+                                            <p>This was a trip of a lifetime. We worked well together, came up
+                                                with an
+                                                awesome itinerary
+                                                for 6 weeks to New Zealand and Australia. You name it we were
+                                                going to
+                                                do
+                                                it. This truly
+                                                was an itinerary with planes, trains & automobiles. Let's not
+                                                forget to
+                                                include boats,
+                                                helicopter, camel and kayak. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+
+                            <div class="row ">
+                                <div class="review-col-left col-xs-12 col-sm-12 col-md-6 col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="customer-image">
+                                                <img class="img-fluid carousal-image" src="./images/test1.jpg" alt="">
+                                                <span class="image-quote">
+                                                    <img width="16px" height="16px"
+                                                        src="./images/bxs-quote-alt-left.svg" alt="quote">
+                                                </span>
+                                            </div>
+
+                                            <div class="customer-review">
+                                                <span>
+                                                    <span>
+                                                        <strong>
+                                                            Robert Johnson <br>
+                                                        </strong>
+                                                    </span>
+                                                    <span>
+                                                        Sydney,Australia 20th August 2020 <br>
+                                                    </span>
+                                                    <p class="carousal-star">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                    </p>
+                                                </span>
+                                            </div>
+                                            <p>This was a trip of a lifetime. We worked well together, came up with an
+                                                awesome itinerary for 6 weeks to New Zealand and Australia. You name it
+                                                we were
+                                                going to do it.This truly was an itinerary with planes, trains &
+                                                automobiles. Let's not forget to include boats,helicopter, camel and
+                                                kayak. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-col-right col-xs-12 col-sm-12 col-md-6 col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="customer-image">
+                                                <img class="img-fluid carousal-image" src="./images/test2.jpg" alt="">
+                                                <span class="image-quote">
+                                                    <img width="16px" height="16px"
+                                                        src="./images/bxs-quote-alt-left.svg" alt="quote">
+                                                </span>
+                                            </div>
+
+                                            <div class="customer-review">
+                                                <span>
+                                                    <span>
+                                                        <strong>
+                                                            Robert Johnson <br>
+                                                        </strong>
+                                                    </span>
+                                                    <span>
+                                                        Sydney,Australia 20th August 2020 <br>
+                                                    </span>
+                                                    <p class="carousal-star">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                    </p>
+                                                </span>
+                                            </div>
+                                            <p>This was a trip of a lifetime. We worked well together, came up
+                                                with an
+                                                awesome itinerary
+                                                for 6 weeks to New Zealand and Australia. You name it we were
+                                                going to
+                                                do
+                                                it. This truly
+                                                was an itinerary with planes, trains & automobiles. Let's not
+                                                forget to
+                                                include boats,
+                                                helicopter, camel and kayak. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                </footer>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- ----------------------question section---------------------- -->
+        <section id="questions"></section>
+        <div class="row question-banner">
+            <div class="col-2"></div>
+            <div class="col-6 question-banner-heading">
+                <h4>Have Some Questions About Tours and Travels?
+                </h4>
+                <h6>subscribe our newsletter!</h6>
             </div>
+            <div class="col">
+                <button class="bottom-banner-button" type="submit ">Let's talk</button>
+            </div>
+        </div>
+        <!-- ------------------footer section----------------------- -->
+        <section id="footer-section">
+            <footer>
+                <div class="row ">
+                    <footer class="bg-dark text-center text-light">
+                        <div class=" " id="contact">
+                            <div class="row contact-footer">
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-xl-4 ">
+                                    <h4 class="text-uppercase footer-heading">Our Awards
+                                        <div class="footer-dash"></div>
+                                    </h4>
+                                    <p class="footer-content">
+                                        A travel agency is a private retailer or public service that provides travel
+                                        and
+                                        tourism-related services to the general public on behalf of accommodation or
+                                        travel
+
+                                    </p>
+                                    <img class="footer-award" src="./images/award.png" alt="">
+
+                                    <img class="footer-award" src="./images/award.png" alt="">
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-xl-4 ">
+                                    <h4 class="text-uppercase footer-heading">Contact Info
+                                        <div class="footer-dash"></div>
+                                    </h4>
+                                    <p>
+                                        you can contact us for below given information
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="footer-telephone">
+                                            <!-- <img src="./images/telephoneicon3.png" alt=""> -->
+                                            <i class="bi bi-telephone-outbound"></i>
+                                            <p>
+                                                <span>
+                                                    Need help?call toll free
+                                                </span>
+                                                <br>
+                                                0123 456 789
+
+                                            </p>
+                                        </li>
+                                        <li class="footer-mail">
+                                            <!-- <img src="./images/mailicon.png" alt="" height="30px" width="30px" style="color:azure"> -->
+                                            <i class="bi bi-envelope"></i>
+                                            <p>
+                                                <span>
+                                                    Mail us for Any Query
+                                                </span>
+                                                <br>
+                                                support@domain.com
+                                            </p>
+                                            <br>
+
+                                        </li>
+                                        <li class="social-icon">
+                                            <i class="bi bi-facebook"></i>
+                                            <i class="bi bi-linkedin"></i>
+                                            <i class="bi bi-instagram"></i>
+                                            <i class="bi bi-twitter"></i>
+                                            <!-- <button type="submit "><img src="./images/icons8-instagram-26.png "
+                                                    alt=""></button> -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-4 col-xl-4">
+                                    <h4 class="text-uppercase mb-0 footer-heading">Recent trips
+                                        <div class="footer-dash"></div>
+
+                                    </h4>
+                                    <ul class="list-unstyled ">
+                                        <div class="recent-trip-image">
+                                            <li>
+                                                <img src="./images/canada.jpg " alt=" ">
+                                                <img src="./images/usa.jpg  " alt=" "><br>
+                                                <img src="./images/canada.jpg  " alt=" ">
+                                                <img src="./images/usa.jpg  " alt=" ">
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center p-3 ">
+                        </div>
+                        <hr>
+                        <!-- -------------------------------------- -->
+                        <nav class="navbar navbar-expand-md navbar-light">
+                            <div class="container-fluid xyz">
+                                <div id="footer-navbar">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="home" href="#">HOME</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="aboutus" href="#">ABOUTUS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="services" href="#">SERVICES</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " id="tour" href="#">TOUR</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " id="packages" href="#">PACKAGES</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " id="blog" href="#">BLOG</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " id="contact" href="#">CONTACT</a>
+                                        </li>
+
+                                </div>
+
+                            </div>
+                </div>
+                </header>
+            </footer>
+        </section>
     </div>
-    </section>
 </body>
-
-
 
 </html>
